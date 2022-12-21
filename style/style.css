@@ -1,0 +1,247 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.cinema {
+  max-width: 375px;
+  width: 100%;
+  margin: 50px auto 30px;
+  height: 700px;
+  padding: 20px;
+  background-color: #1D1F20;
+}
+.cinema__nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 72px;
+}
+.cinema__nav-title {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  color: white;
+}
+.cinema__nav-span {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #4a4a4a;
+}
+.cinema__nav-time {
+  display: flex;
+  border-radius: 12px;
+  padding: 10px 15px;
+  justify-content: center;
+  align-items: center;
+  background-color: #363636;
+  border: 1px solid #363636;
+  color: white;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+.cinema__screen {
+  width: 334px;
+  height: 40px;
+  transform: rotate(180deg);
+  margin-top: 40px;
+  margin-bottom: 87px;
+}
+.cinema .main__seat,
+.cinema .minimal,
+.cinema .medium,
+.cinema .high {
+  font-size: 43px;
+  display: flex;
+  justify-content: space-between;
+  color: whitesmoke;
+  cursor: pointer;
+}
+.cinema .main__seat-rows,
+.cinema .minimal-rows,
+.cinema .medium-rows,
+.cinema .high-rows {
+  margin-bottom: 25px;
+}
+.cinema .main__seat-rows:first-of-type,
+.cinema .minimal-rows:first-of-type,
+.cinema .medium-rows:first-of-type,
+.cinema .high-rows:first-of-type {
+  transform: rotate(-10deg);
+}
+.cinema .main__seat-rows:last-of-type,
+.cinema .minimal-rows:last-of-type,
+.cinema .medium-rows:last-of-type,
+.cinema .high-rows:last-of-type {
+  transform: rotateZ(10deg);
+}
+.cinema__footer {
+  display: flex;
+  justify-content: space-between;
+}
+.cinema__footer-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  background: linear-gradient(189deg, #232527 0%, #151617 87.4%);
+  box-shadow: -1.87721px 11.8523px 24px rgba(6, 6, 6, 0.443), inset 0.825974px -5.21499px 5.28px #131415, inset -0.825974px 5.21499px 5.28px #252829;
+}
+.cinema__footer-button:hover {
+  box-shadow: inset -0.825974px 5.21499px 5.28px #230030;
+}
+.cinema__footer-price-span {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: white;
+  margin-bottom: 8px;
+}
+.cinema__footer-price-desc {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  color: white;
+}
+
+.arrow {
+  font-size: 30px;
+  color: white;
+}
+
+.active {
+  transition: all 0.7s;
+  color: #FFA903;
+}
+
+.separator {
+  -moz-animation: myfade 1s ease infinite;
+  -webkit-animation: myfade 1s ease infinite;
+  margin: 0 2px;
+}
+
+@-webkit-keyframes myfade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* Ticket styles  */
+.ticket {
+  max-width: 375px;
+  width: 100%;
+  margin: 50px auto 30px;
+  height: 700px;
+  padding: 20px;
+  background-color: #1D1F20;
+  position: relative;
+}
+.ticket__nav-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.ticket__nav-wrap-title {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  color: white;
+}
+.ticket__nav-wrap-span {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #4a4a4a;
+}
+.ticket__body {
+  width: 335px;
+  height: 597px;
+  background: linear-gradient(180deg, #333739 0%, #212324 100%);
+  box-shadow: 0px 62.1333px 124.267px rgba(9, 9, 10, 0.3905), inset 0px -25.2676px 25.2676px #1E2021, inset 0px 25.2676px 25.2676px #363A3C;
+  border-radius: 25px;
+  position: relative;
+}
+.ticket__body-span {
+  height: 15px;
+  width: 291px;
+  background: linear-gradient(180deg, #2B2D2F 0%, #3F4345 100%);
+  border-radius: 21px;
+  box-shadow: inset 0px 7.616px 7.616px rgba(40, 42, 44, 0.5), inset 0px -7.616px 7.616px rgba(66, 70, 72, 0.5);
+  display: block;
+  position: absolute;
+  top: 25px;
+  left: 22px;
+  z-index: 1;
+}
+.ticket__body-ticket {
+  width: 255px;
+  height: 477px;
+  background: linear-gradient(180deg, #FFA903 -6.49%, #C78300 104.25%);
+  box-shadow: 0px 47.721px 95.4419px rgba(171, 168, 168, 0.15), inset 0px -13.1498px 13.1498px #AC7100, inset 0px 13.1498px 13.1498px #FFBA35;
+  position: absolute;
+  top: 38px;
+  left: 40px;
+  font-family: "Poppins";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ticket__body-ticket-title {
+  font-family: "Poppins";
+  font-size: 25px;
+  color: #151617;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.ticket__body-ticket-qr {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.ticket__body-ticket-secSpan {
+  width: 150px;
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: "Poppins";
+  font-size: 17px;
+  line-height: 25px;
+}
+.ticket__btn {
+  font-size: 15px;
+  position: absolute;
+  bottom: 15px;
+  left: 28%;
+  background: linear-gradient(189deg, #232527 0%, #151617 87.4%);
+  border-radius: 12px;
+  box-shadow: -1.87721px 11.8523px 24px rgba(6, 6, 6, 0.443), inset 0.825974px -5.21499px 5.28px #131415, inset -0.825974px 5.21499px 5.28px #252829;
+  padding: 15px 20px 15px 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.square {
+  margin-right: 10px;
+}/*# sourceMappingURL=style.css.map */
